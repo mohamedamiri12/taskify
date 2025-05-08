@@ -12,6 +12,9 @@ export class TaskComponent {
   @Input() task!: Task;
   @Output() taskToggled = new EventEmitter<Task>();
   @Output() taskDeleted = new EventEmitter<number>();
+  @Output() edit = new EventEmitter<Task>();
+
+
 
  
   toggleCompleted() {
@@ -30,6 +33,10 @@ export class TaskComponent {
   
   onDelete() {
     this.taskDeleted.emit(this.task.id);
+  }
+  
+  onEdit() {
+    this.edit.emit(this.task);
   }
 
 }
