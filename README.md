@@ -21,16 +21,12 @@ A modern task management application built with Angular and Tailwind CSS that he
 - **Local Storage**: Persistent task storage
 - **Responsive Design**: Works on all devices
 
-Installation
-Clone repository
-
-bash
+###Installation
+##Clone repository
 git clone https://github.com/mohamedamiri12/taskify.git
-Install dependencies
 
-bash
+##Install dependencies
 npm install
-Run development server
 
-bash
+##Run development server
 ng serve
