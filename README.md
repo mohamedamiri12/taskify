@@ -1,6 +1,7 @@
 # Taskify - Task Management App
 
-![Taskify Screenshot](public\main-page.png) <!-- Add your screenshot here -->
+![Taskify Screenshot](https://github.com/user-attachments/assets/fb989061-976c-4abd-a835-1ca9d655f6fe)
+<!-- Add your screenshot here -->
 
 A modern task management application built with Angular and Tailwind CSS that helps users organize, prioritize, and track their tasks efficiently.
 
