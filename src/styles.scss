@@ -1,21 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* Fix Material input background in dark mode */
-.dark .mat-form-field-fill {
-    background-color: transparent !important;
-  }
-  
-  /* Fix select dropdown panel */
-  .mat-select-panel {
-    border-radius: 8px !important;
-    margin-top: 4px !important;
-  }
-  
-  /* Error message styling */
-  .mat-error {
-    font-size: 0.75rem !important;
-    margin-top: 4px !important;
-  }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+

@@ -1,7 +1,7 @@
 <div class="p-4 mb-3 bg-white rounded-lg shadow-sm border-l-4 
 transition hover:shadow-md flex items-center">
     <input type="checkbox" [checked]="task.completed" (change)="toggleCompleted()"
-        class="h-5 w-5 rounded text-indigo-600 focus:ring-indigo-500">
+        class="h-5 w-5 cursor-pointer">
     <span class="ml-3 flex-grow text-gray-800">{{ task.title }}</span>
     <span [class]="getPriorityClass(task.priority)" class="ml-2 text-xs px-2 py-1 rounded-full font-medium">
         {{ task.priority | titlecase }}
@@ -17,5 +17,5 @@ transition hover:shadow-md flex items-center">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
         </svg></button>
-
 </div>
+  

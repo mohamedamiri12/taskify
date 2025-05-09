@@ -11,6 +11,7 @@ export class TaskService {
   private tasks: Task[] = [];
   private tasksSubject = new BehaviorSubject<Task[]>(this.tasks);
   
+  
   constructor() {
     this.loadInitialData();
   }
@@ -30,9 +31,11 @@ export class TaskService {
   }
   
   private updateState() {
-    this.tasksSubject.next([...this.tasks]); // Immutable update
+    this.tasksSubject.next(this.tasks);
     this.saveTasks(); // Persist changes
   }
+  
+  
 
   addTask(title: string, priority: 'low' | 'medium' | 'high'): void {
     const newTask: Task = {
@@ -62,5 +65,6 @@ export class TaskService {
   getTaskById(id: number): Task | undefined {
     return this.tasks.find(task => task.id === id);
   }
+  
   
 }
